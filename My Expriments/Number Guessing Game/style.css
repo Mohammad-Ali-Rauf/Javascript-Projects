@@ -1,0 +1,28 @@
+body{
+    background-color:  skyblue;
+}
+
+#container{
+    background-color: #6e77f0;
+    border: 4px solid rgb(50, 177, 205);
+    height: 150px;
+    width: 1000px;
+    margin-top: 20%;
+    margin-left: 25%;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    padding-top: 10px;
+    color: rgb(218, 96, 96);
+}
+p{
+    color: white;
+}
+#input{
+    width: 100px;
+    margin: 25px auto;
+}
+#btn{
+    margin: 25px auto auto 5px;
+}

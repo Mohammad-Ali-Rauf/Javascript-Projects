@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Default</title>
+    <link rel="stylesheet" href="style.css">
+
+    <input type="text" value="AoA By Ali" id="myInput">
+    <button onclick="myFunction()">Copy Text</button>
+
+    <script>
+        function myFunction() {
+            var copyText = document.getElementById("myInput");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999)
+            document.execCommand("copy");
+            alert("Copied to Clipboard: " + copyText.value);
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

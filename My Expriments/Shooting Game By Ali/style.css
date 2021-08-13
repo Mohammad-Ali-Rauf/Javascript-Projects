@@ -1,0 +1,8 @@
+canvas{
+    background-image: url(https://i.pinimg.com/originals/22/29/32/222932bce16a015c5d85761a4ad040ab.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #000000;
+    display: block;
+    margin: auto;
+}

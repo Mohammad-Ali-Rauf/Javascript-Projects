@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Email Validation | Ali</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <div class="content">
+        <header>Email Validation in HTML CSS & JavaScript</header>
+        <form action="#">
+            <div class="field">
+                <input onkeyup="check()" id="email" type="text" placeholder="Enter Email Address">
+                <div class="icons">
+                    <span class="icon1 fas fa-exclamation"></span>
+                    <span class="icon2 fas fa-check"></span>
+                </div>
+            </div>
+            <div class="error-text">Please Enter Valid Email Address</div>
+            <button>Submit</button>
+        </form>
+    </div>
+    <script>
+        const email = document.querySelector("#email");
+        const icon1 = document.querySelector(".icon1");
+        const icon2 = document.querySelector(".icon2");
+        const error_text = document.querySelector(".error-text");
+        const btn = document.querySelector("button");
+        let regExp = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+        function check() {
+            if (email.value.match(regExp)) {
+                email.style.borderColor = "#27ae60";
+                icon1.style.display = "none";
+                icon2.style.display = "block";
+                error_text.style.display = "none";
+                btn.style.display = "block"
+            }else{
+                email.style.borderColor = "#e74c3c";
+                icon1.style.display = "block";
+                icon2.style.display = "none";
+                error_text.style.display = "block";
+                btn.style.display = "none"
+            }
+            if (email.value == "") {
+                email.style.borderColor = "lightgrey";
+                icon1.style.display = "none";
+                icon2.style.display = "none";
+                error_text.style.display = "none";
+                btn.style.display = "none"
+            }
+        }
+    </script>
+</body>
+</html>
